@@ -5,93 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <title>Quiz-board</title>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <title>Quiz-board</title>
 </head>
-<body style="background-color:bisque">
-<div class="container">
-<div class="jumbotron">
-<div class="col-md-12">
-<div class="text-success">
+      <body style="background-color:bisque">
+            <div class="container">
+            <div class="jumbotron">
+            <div class="col-md-12">
+            <div class="text-success">
 
-<h1>Quiz Board</h1>
-</div>
-<p>This Quiz board concists of <strong>Questions</strong> that you have to choose the answer by clicking on the radio button or checkbox.</p>
-</div>
-<form>
-    Firstname:
-    <input type="text" name="firstname" required><br>
-   <br>Lastname:
-    <input type="text" name="lastname" required><br>
-    <br>Email:
-    <input type="text" name="email" required><br>
-   <br> Gender:
-    <input type="radio" name="gender" value="male"> Male
-  <input type="radio" name="gender" value="female" required> Female<br>
- <br> Date of birth:
-  <input type="date" name="date">
+            <h1>Quiz Board</h1>
+            </div>
+            <p>This Quiz board concists of <strong>Questions</strong> that you have to choose the answer by clicking on the radio button or checkbox.</p>
+            </div>
+            <form>
+                Firstname:
+                <input type="text" name="firstname" required><br>
+            <br>Lastname:
+                <input type="text" name="lastname" required><br>
+                <br>Email:
+                <input type="text" name="email" required><br>
+            <br> Gender:
+                <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female" required> Female<br>
+            <br> Date of birth:
+            <input type="date" name="date">
 
-</div>
-</form>
-<div class="well">
-<div class="col-md-12">
-<h2>Questions</h2>
-<p>The Quiz board consists of Historical questions and General knowledge questions.</p>
-       </div>
-<h3>I.Historical Questions</h3>
-<form>
-        A. What links - Goa - Kerula - Assam - Bihar:<br>
-        <br><input type="checkbox" name="china" value="China">China<br> 
-        <input type="checkbox" name="india" value="India" class="correct" required>India<br>
-        <input type="checkbox" name="bangladesh" value="Bangladesh">Bangladesh<br>
-        <input type="checkbox" name="burundi" value="Burundi">Burundi<br>
-        <input type="checkbox" name="none" value="none">None<br>  
+            </div>
+            </form>
+            <div class="well">
+            <div class="col-md-12">
+            <h2>Questions</h2>
+            <p>The Quiz board consists of Historical questions and General knowledge questions.</p>
+                </div>
+            <h3>I.Historical Questions</h3>
+            <form>
+                    A. What links - Goa - Kerula - Assam - Bihar:<br>
+                    <br><input type="checkbox" name="china" value="false">China<br> 
+                    <input type="checkbox" name="india" value="true" class="correct" required>India<br>
+                    <input type="checkbox" name="bangladesh" value="false">Bangladesh<br>
+                    <input type="checkbox" name="burundi" value="false">Burundi<br>
+                    <input type="checkbox" name="none" value="false">None<br>  
 
-        <br>B. Who piloted the first flight across the English channel:<br>
-        <br><input type="checkbox" name="Louis Bleriot" value="Louis Bleriot" class="correct" required>Louis Bleriot<br>
-        <input type="checkbox" name="Alexander Dumas" value="Alexander Dumas">Alexander Dumas<br>
-        <input type="checkbox" name="Woody Allen" value="Woody Allen">Woody Allen<br>
-        <input type="checkbox" name="none" value="none">None<br> 
+                    <br>B. Who piloted the first flight across the English channel:<br>
+                    <br><input type="checkbox" name="Louis Bleriot" value="true" class="correct" required>Louis Bleriot<br>
+                    <input type="checkbox" name="Alexander Dumas" value="false">Alexander Dumas<br>
+                    <input type="checkbox" name="Woody Allen" value="false">Woody Allen<br>
+                    <input type="checkbox" name="none" value="false">None<br> 
 
-       <br> C. Which human rights organisation founded 1961 got Nobel 1977:<br>
-       <br><input type="checkbox" name="Anti-Slavery International" value="Anti-Slavery International">Anti-Slavery International<br>
-       <input type="checkbox" name="Avocats Sans Frontières" value="Avocats Sans Frontières">Avocats Sans Frontières<br>
-       <input type="checkbox" name="Amnesty International" value="Amnesty International" class="correct" required>Amnesty International<br>
-       <input type="checkbox" name="Cultural Survival" value="Cultural Survival">Cultural Survival<br>
-       <input type="checkbox" name="Commonwealth Human Rights Initiative" value="Commonwealth Human Rights Initiative">Commonwealth Human Rights Initiative<br> 
-       <input type="checkbox" name="none" value="none">None<br>
-</form>
-<h3>II.General knowledge Questions</h3>
-        A.Which country do Sinologists study:<br>
-        <br><input type="checkbox" name="china" value="china" class="correct" required>China<br>
-        <input type="checkbox" name="usa" value="usa">USA<br>
-        <input type="checkbox" name="rwanda" value="rwanda">Rwanda<br>
-        <input type="checkbox" name="none" value="none">None<br> 
-        
-        <br>B.What animals name translates as water horse:<br>
-       <br><input type="checkbox" name="albatross" value="albatross">Albatross<br>
-        <input type="checkbox" name="Hippopotamus" value="Hippopotamus" class="correct" required>Hippopotamus<br>
-        <input type="checkbox" name="cat" value="cat">Cat<br>
-        <input type="checkbox" name="none" value="none">None<br> 
+                <br> C. Which human rights organisation founded 1961 got Nobel 1977:<br>
+                <br><input type="checkbox" name="Anti-Slavery International" value="false">Anti-Slavery International<br>
+                <input type="checkbox" name="Avocats Sans Frontières" value="false">Avocats Sans Frontières<br>
+                <input type="checkbox" name="Amnesty International" value="true" class="correct" required>Amnesty International<br>
+                <input type="checkbox" name="Cultural Survival" value="false">Cultural Survival<br>
+                <input type="checkbox" name="Commonwealth Human Rights Initiative" value="false">Commonwealth Human Rights Initiative<br> 
+                <input type="checkbox" name="none" value="false">None<br>
+            </form>
+            <h3>II.General knowledge Questions</h3>
+                    A.Which country do Sinologists study:<br>
+                    <br><input type="checkbox" name="china" value="true" class="correct" required>China<br>
+                    <input type="checkbox" name="usa" value="false">USA<br>
+                    <input type="checkbox" name="rwanda" value="false">Rwanda<br>
+                    <input type="checkbox" name="none" value="false">None<br> 
+                    
+                    <br>B.What animals name translates as water horse:<br>
+                <br><input type="checkbox" name="albatross" value="false">Albatross<br>
+                    <input type="checkbox" name="Hippopotamus" value="true" class="correct" required>Hippopotamus<br>
+                    <input type="checkbox" name="cat" value="false">Cat<br>
+                    <input type="checkbox" name="none" value="false">None<br> 
 
-       <br>C. If you had pogonophobia what would you be afraid of:<br>
-        <br><input type="checkbox" name="Beards" value="Beards" class="correct" required>Beards<br>
-        <input type="checkbox" name="snake" value="snake">Snake<br> 
-        <input type="checkbox" name="rain" value="rain">Rain<br>
-        <div class="row">
-        <div class="col-md-4">
-        <br><input type="submit" class="btn btn-primary" value="Submit" style="margin-left:100px;">
-        </div>
-        </div>
-        <div class="col-md-6">
-                <h1 id="result"></h1>
-           
-        </div> 
-       </div> 
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  <script src="js/javascript.js"></script>
-</body>
+                <br>C. If you had pogonophobia what would you be afraid of:<br>
+                    <br><input type="checkbox" name="Beards" value="true" class="correct" required>Beards<br>
+                    <input type="checkbox" name="snake" value="false">Snake<br> 
+                    <input type="checkbox" name="rain" value="false">Rain<br>
+                    <input type="checkbox" name="none" value="false">None<br> 
+                    <div class="row">
+                    <div class="col-md-4">
+                    <br><input type="submit" class="btn btn-primary" value="Submit" style="margin-left:100px;">
+                    </div>
+                    </div>
+                    <div class="col-md-6">
+                            <h1 id="result"></h1>
+                    
+                    </div> 
+                </div> 
+            <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+            <script src="js/javascript.js"></script>
+            </body>
 </html>
