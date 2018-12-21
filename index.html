@@ -8,12 +8,15 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <title>Quiz-board</title>
 </head>
-<body>
+<body style="background-color:bisque">
 <div class="container">
 <div class="jumbotron">
-<div class="col-md-6">
+<div class="col-md-12">
+<div class="text-success">
+
 <h1>Quiz Board</h1>
-<p>This Quiz board concists of <strong>Questions</strong> that you have to choose the answer by clicking on the radio button or checkbox</p>
+</div>
+<p>This Quiz board concists of <strong>Questions</strong> that you have to choose the answer by clicking on the radio button or checkbox.</p>
 </div>
 <form>
     Firstname:
@@ -27,9 +30,14 @@
   <input type="radio" name="gender" value="female" required> Female<br>
  <br> Date of birth:
   <input type="date" name="date">
+
+</div>
 </form>
+<div class="well">
+<div class="col-md-12">
 <h2>Questions</h2>
-<p>The Quiz board consists of Historical questions and General knowledge questions</p>
+<p>The Quiz board consists of Historical questions and General knowledge questions.</p>
+       </div>
 <h3>I.Historical Questions</h3>
 <form>
         A. What links - Goa - Kerula - Assam - Bihar:<br>
@@ -51,7 +59,7 @@
        <input type="checkbox" name="Amnesty International" value="Amnesty International" class="correct" required>Amnesty International<br>
        <input type="checkbox" name="Cultural Survival" value="Cultural Survival">Cultural Survival<br>
        <input type="checkbox" name="Commonwealth Human Rights Initiative" value="Commonwealth Human Rights Initiative">Commonwealth Human Rights Initiative<br> 
-       <input type="checkbox" name="none" value="none">None<br> 
+       <input type="checkbox" name="none" value="none">None<br>
 </form>
 <h3>II.General knowledge Questions</h3>
         A.Which country do Sinologists study:<br>
@@ -70,11 +78,16 @@
         <br><input type="checkbox" name="Beards" value="Beards" class="correct" required>Beards<br>
         <input type="checkbox" name="snake" value="snake">Snake<br> 
         <input type="checkbox" name="rain" value="rain">Rain<br>
-        <input type="submit" class="btn btn-primary" value="Submit">
+        <div class="row">
+        <div class="col-md-4">
+        <br><input type="submit" class="btn btn-primary" value="Submit" style="margin-left:100px;">
+        </div>
+        </div>
         <div class="col-md-6">
                 <h1 id="result"></h1>
            
         </div> 
+       </div> 
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
