@@ -8,7 +8,9 @@ $(document).ready(function() {
             answers.push($(this).prop('checked'));
 })
 console.log(answers);
-
+$('#result').text("Your score is "+ getScore(answers));
+})
+});
 
 
 
