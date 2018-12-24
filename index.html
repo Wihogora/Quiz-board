@@ -6,80 +6,38 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <!-- Latest compiled and minified CSS -->
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <link rel="stylesheet" type="text/css" href="styles.css">
                     <title>Quiz-board</title>
     </head>
     <body style="background-color:bisque">
+    <img src="https://img.freepik.com/free-vector/abstract-background-of-questionnaire-with-speech-bubbles_23-2147595469.jpg?size=338&ext=jpg" class="img-circle" alt="Quiz-board">
         <div class="container">
+        <div class="well">
          <div class="row">
             <div class="col-md-12">
-        <div class="jumbotron">
+        <div class="text-info">
+        <form>
         <h1>Quiz Board</h1>
-        <p>This Quiz board concists of <strong>Questions</strong> that you have to choose the answer by clicking on the radio button or checkbox.</p>
-           
-            Firstname:
-            <input type="text" name="firstname"><br>
+        </div>
+                Firstname:
+            <input type="text" name="firstname" required><br>
             <br>Lastname:
-            <input type="text" name="lastname" ><br>
+            <input type="text" name="lastname" required><br>
             <br>Email:
-            <input type="text" name="email" ><br>
+            <input type="text" name="email"required><br>
             <br> Gender:
-            <input type="radio" name="gender" value="male"> Male
-            <input type="radio" name="gender" value="female" > Female<br>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female" > Female<br></label>
             <br> Date of birth:
-            <input type="date" name="date">
+            <input type="date" name="date"><br>
+                 <br><a href="form.html"><input type="Login" class="btn btn-primary" value="Login" style="margin-left:100px;"></a>
             </div>
              </div>
                </div>
                  </div>
-          <form>
-          <div class="col-md-12">
-          <div class="well">
-            <h2>Questions</h2>
-            <p>The Quiz board consists of Historical questions and General knowledge questions.</p>
-            <h3>I.Historical Questions</h3>
+                 </form>
 
-            A. What links - Goa - Kerula - Assam - Bihar:<br>
-            <br><label><input type="radio" name="link" value="false">China</label><br> 
-            <label><input type="radio" name="link" value="true" class="correct" required>India</label><br>
-            <label><input type="radio" name="link" value="false">Bangladesh</label><br>
-            <label><input type="radio" name="link" value="false">Burundi</label><br>
-            <label> <input type="radio" name="link" value="false">None</label><br>  
-
-            <br>B. Who piloted the first flight across the English channel:<br>
-            <br><label><input type="radio" name="link1" value="true" class="correct">Louis Bleriot</label><br>
-            <label><input type="radio" name="link1" value="false">Alexander Dumas</label><br>
-            <label><input type="radio"  name="link1" value="false" required>Woody Allen </label><br>
-            <label><input type="radio" name="link1" value="false">None</label><br> 
-            <br> C. Which human rights organisation founded 1961 got Nobel 1977:<br>
-            <br><label><input type="radio" name="link2" value="false">Anti-Slavery International</label><br>
-            <label> <input type="radio" name="link2" value="false" required>Avocats Sans Frontières</label><br>
-            <label><input type="radio" name="link2 " value="true" class="correct">Amnesty International</label><br>
-            <label><input type="radio" name="link2" value="false">Cultural Survival<br>
-            <label><input type="radio" name="link2 " value="false">Commonwealth Human Rights Initiative</label><br> 
-            <label><input type="radio" name="link2" value="false">None</label><br>
-            <h3>II.General knowledge Questions</h3>
-            A.Which country do Sinologists study:<br>
-            <br><label><input type="radio" name="link2" value="true" class="correct" required>China</label><br>
-            <label><input type="radio" name="link2" value="false">USA</label><br>
-            <label><input type="radio" name="link2" value="false">Rwanda</label><br>
-            <label><input type="radio" name="link2" value="false">None</label><br> 
-            <br>B.What animals name translates as water horse:<br>
-            <br><label><input type="radio" name="link3" value="false">Albatross</label><br>
-            <label><input type="radio" name="link3" value="true" class="correct" required>Hippopotamus</label><br>
-            <label><input type="radio" name="link3" value="false">Cat</label><br>
-            <label><input type="radio" name="link3" value="false">None</label><br> 
-            <br>C. If you had pogonophobia what would you be afraid of:<br>
-            <br><label><input type="radio" name="link4" value="true" class="correct"required>Beards</label><br>
-            <label><input type="radio" name="link4" value="false">Snake</label><br> 
-            <label><input type="radio"  name="link4" value="false">Rain</label><br>
-            <label><input type="radio" name="link4" value="false">None</label><br> 
-            <br><input type="submit" class="btn btn-primary" value="Submit" style="margin-left:100px;">
-            <h1 id="result"></h1>
-            </div>
-            </div>
-        </form>
-                
-        <script
+<script
             src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
